@@ -1,7 +1,7 @@
 # THis script reprocudes the graphs visualizing how conformal prediction works from Chapter 2
 rm(list = ls())
-
-setwd("~/ETH Zurich/MSc Thesis/thesis")
+library(ggplot2)
+#setwd("~/ETH Zurich/MSc Thesis/thesis")
 
 source("utils.R")
 
@@ -100,8 +100,6 @@ for (i in 1:length(y_grid)){
   }
     
 }
-y_grid[y_grid_include_q]
-y_grid[y_grid_include_pi]
 
 
 ## Plot the results
